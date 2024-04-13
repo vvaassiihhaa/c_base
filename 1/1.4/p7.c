@@ -2,6 +2,6 @@
 #include <stdio.h>
 
 int main( void ) {
-    printf( "I love C\n" );
+    printf( "I love C .\n" );
     return 0;
 }
