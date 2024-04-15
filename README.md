@@ -8,4 +8,4 @@ https://stepik.org/course/193691/syllabus
 
 https://proproprogs.ru/c_base
 
-tabnine
+tabnine.com
