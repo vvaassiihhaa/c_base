@@ -5,4 +5,4 @@ int main( void ) {
     return 0;
 }
 
-// gcc p7.c -o hello
+// gcc p7.c -o hello.exe
