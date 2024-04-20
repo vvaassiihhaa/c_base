@@ -1,2 +1,14 @@
 *.exe
 .vscode
+*SYM*
+4/4.2/p2
+4/4.2/p2.dSYM/Contents/Info.plist
+4/4.2/p2.dSYM/Contents/Resources/DWARF/p2
+4/4.2/p2.dSYM/Contents/Resources/Relocations/aarch64/p2.yml
+4/4.2/p3
+4/4.2/p4
+4/4.2/p5
+4/4.2/p6
+4/4.2/p7
+4/4.2/p8
+4/4.2/p9
