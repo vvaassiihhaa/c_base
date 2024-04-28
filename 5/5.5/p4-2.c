@@ -14,7 +14,7 @@ int main ( void ) {
       
   int num = -1;
   
-  for ( int i = 0; i < count; ++i ) {
+  for ( int i = 0; i < count; ++i ) 
     if ( digs[ i ] == 5 ) {
 	    count = count < TOTAL ? count + 1 : count;
 	    for ( int j = count - 1; j > i; j-- )
@@ -22,7 +22,6 @@ int main ( void ) {
       if ( i + 1 < TOTAL )   
 	      digs[ i + 1 ] = num--;               
 	  }                                       
-  }
   
   for ( int i = 0; i < count; i++ )
     printf( "%d ", digs[ i ] );
