@@ -9,18 +9,34 @@ int main(void)
     if(ptr_n != NULL)
         *ptr_n = '\0';
 
-    char* ptr_at1 = strrchr(str, '@'); // слева
-    char* ptr_at2 = strchr(str, '@');  // справа
+    char* ptr_at1 = strchr( str, '@' ); // слева
+    char* ptr_at2 = strrchr( str, '@' ); // справа
 
     int result = 1;
-    if ( ptr_at1 == NULL || ptr_at1 != ptr_at2 ) result = 0;
+    if ( ptr_at1[1] == '.' || ptr_at1 == str || ptr_at1 == NULL || ptr_at1 != ptr_at2 ) 
+        result = 0;
+
+    ptr_at2 = strrchr( str, '.' ); // справа
+    if ( ptr_at2 - ptr_at1 <= 0 || ptr_at2 == NULL ) result = 0;        
+
+    char s[] = "abcdefghijklmnopqrstuvwxyz"
+               "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+               "0123456789._-@";
+
+    for ( int i = 0; i < strlen( str ); ++i )
+        if ( strchr( s, str[i] ) == NULL )
+            result = 0;
 
     printf( "%d\n", result );
 
     return 0;
 }
-
+    // if ( strpbrk( str, s ) != NULL ) result = 0;
+    // printf( "%s", s );
+    // printf( "%d\n", result );
 /*
+
+strpbrk
 
 Подвиг 9*. Продолжите программу. 
 
