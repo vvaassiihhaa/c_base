@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main ( void ) {
@@ -11,16 +10,26 @@ int main ( void ) {
     while ( scanf( "%d", &marks[ ++count ] ) == 1 );
 
     char info[100];
-    sprintf( info, "%s: ", name );
+    sprintf( info, "%s:", name );
 
+    char digit[5];
+    for ( int i = 0; i < count; ++i ) {
+        sprintf( digit, " %d,", marks[i] );
+        strcat( info, digit );
+    }
+
+    info[ strlen( info ) - 1 ] = '\0';
     puts( info );
 
+    return 0;
+}
+
+        // strcat( info, " " );
+        // strcat( info, "," );
     // printf( "%s:", name );
     // for ( int i = 0; i < count; ++i )
     //    printf( "%d ", marks[i] );
 
-    return 0;
-}
 
 // char str[100] = { 0 };
 
