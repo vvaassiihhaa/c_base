@@ -56,6 +56,7 @@ strcat
 Sample Input:
 
 Туполев 5 5 5 4 5 5 3 4
+
 Sample Output:
 
 Туполев: 5, 5, 5, 4, 5, 5, 3, 4
