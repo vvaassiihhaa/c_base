@@ -3,7 +3,7 @@
 int main ( void ) {
     
     float numbers[20] = { 0.0 };
-    int *ptr = &numbers[ 0 ]; 
+    float *ptr = &numbers[ 0 ]; 
     float S = 0.0;   
     int i = 0;
     while ( i < 20 && scanf( "%f", ptr++ ) == 1 ) 
